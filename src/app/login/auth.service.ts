@@ -14,7 +14,7 @@ export class AuthService {
 
     setLogin(value){
         this.isLogin = value;
-        this.router.navigate(['/']);
+        this.router.navigate(['/user']);
         
     }
 

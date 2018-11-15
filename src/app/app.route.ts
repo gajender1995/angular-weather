@@ -6,8 +6,8 @@ import { UserComponent } from './user/user.component';
 
 const route : Routes = [
   { path : 'login' , component : LoginComponent },
-  { path : 'user' , component :  UserComponent    }, 
-  { path : '**' , redirectTo : ''}
+  { path : 'user' , component :  UserComponent  ,canActivate : [AuthGuard]  }, 
+  { path : '**' , redirectTo : 'login'}
 ]
 
 
